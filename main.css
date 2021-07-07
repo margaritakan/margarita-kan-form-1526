@@ -1,0 +1,150 @@
+/*
+Color Scheme: 
+    Grey: #DDD
+    Light grey: #F5F5F5
+    Blue: #6495ED
+
+Fonts: 
+    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+
+*/
+
+/********************************************************
+                    MOBILE PORTRAIT
+********************************************************/
+/* General  */
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+article {
+    /* margin: 0 1.2rem; */
+}
+
+form {
+    font-size: 1rem;
+    padding: 2rem;
+    border: 1px solid #DDD;
+}
+
+fieldset {
+    background-color: #F5F5F5;
+    border: 1px solid #DDD;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.1rem;
+
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+legend {
+    font-size: 2rem;
+    background-color: white;
+    color: #000000;
+    padding: 0.8rem;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;    
+    border: 1px solid #DDD;
+
+}
+
+.form-message, 
+.form-info, 
+.form-elem {
+    width: 100%;
+}
+
+label {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    margin: 0.5rem 0;
+    padding: 0.3;
+    line-height: 1.4rem;
+    border: 1px solid #DDD;
+    border-radius: 0.1rem;
+}
+
+input.submit-button {
+    border: 1px solid #6495ED;
+    border-radius: 0.1rem;
+
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0.5rem 0;
+    border: 0;
+    padding: 0;
+    line-height: 1.4rem;
+    height: 10rem;
+    border: 1px solid #DDD;
+
+}
+
+.submit-button {
+    background-color: #6495ED;
+    color: #F5F5F5;
+    border: 1px solid #DDD;
+    padding: 0.5rem 0.5rem;
+}
+
+/********************************************************
+                    Tablet 25rem
+********************************************************/
+@media only screen and (min-width: 25rem) {
+   fieldset {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .form-info {
+        display: flex;
+        flex-direction: row;   
+    }
+
+    .form-elem {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-right: 0.8rem;
+    }
+
+    .submit-button {
+        width: 30%;
+    }
+}
+
+/********************************************************
+                    Desktop 40rem
+********************************************************/
+@media only screen and (min-width: 40rem) {
+    article {
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+}
