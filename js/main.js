@@ -48,14 +48,14 @@ function formValidator(ev) {
 
     //feedback 
     if (errors.length == 0) {
-        console.clear();
+//         console.clear();
         console.log('COLLECTED DATA');
         console.log(data);
         document.getElementById('theForm').reset();
 
     }
     else {
-        console.clear();
+//         console.clear();
         console.log('ERRORS');
         console.log(errors);
     }
