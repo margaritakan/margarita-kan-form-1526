@@ -26,11 +26,9 @@ function formValidator(ev) {
     if (mail.value != '') {
         if (regEmail.test(mail.value)) {
             data.email = mail.value;
-            console.log("valid");
         }
         else {
             errors.push('E-mail entered incorrectly');
-            console.log("invalid");
         }
     }
     else {
