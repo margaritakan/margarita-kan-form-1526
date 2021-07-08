@@ -14,8 +14,7 @@ function formValidator(ev) {
     
     console.log(mail.value);
 
-
-    //Full name 
+    //Check if Full Name is not empty
     if (fn.value !== '') {
         data.fullName = fn.value;
     }
@@ -23,7 +22,7 @@ function formValidator(ev) {
         errors.push('Full name is missing');
     }
     
-    //email
+    //Check if Email is not empty and entered correctly
     if (mail.value != '') {
         if (regEmail.test(mail.value)) {
             data.email = mail.value;
@@ -38,7 +37,7 @@ function formValidator(ev) {
         errors.push('E-mail is missing');
     }
 
-    //Message
+    //Check if Message is not empty
     if (message.value !== '') {
         data.mes = message.value;
     }
@@ -46,20 +45,18 @@ function formValidator(ev) {
         errors.push('Message is missing');
     }
 
-    //feedback 
+    //Check if there is anything in array arrors and feedback 
     if (errors.length == 0) {
-//         console.clear();
+        console.clear();
         console.log('COLLECTED DATA');
         console.log(data);
         document.getElementById('theForm').reset();
 
     }
     else {
-//         console.clear();
+        console.clear();
         console.log('ERRORS');
         console.log(errors);
     }
-
 }
-
 button.addEventListener("click", formValidator);
